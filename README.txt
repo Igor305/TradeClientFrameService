@@ -1,3 +1,0 @@
-# TradeClientFrameService
-
-git checkout dev
