@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\i.talavyria\\Desktop\\project\\API-Services\\TradeClientFrameService\\PresentationLayer\\PresentationLayer.csproj": {}
+    "C:\\Users\\i.talavyria\\Desktop\\project\\API\\TradeClientFrameService\\TradeClientFrameService\\PresentationLayer\\PresentationLayer.csproj": {}
   },
   "projects": {
-    "C:\\Users\\i.talavyria\\Desktop\\project\\API-Services\\TradeClientFrameService\\BusinessLogicLayer\\BusinessLogicLayer.csproj": {
+    "C:\\Users\\i.talavyria\\Desktop\\project\\API\\TradeClientFrameService\\TradeClientFrameService\\BusinessLogicLayer\\BusinessLogicLayer.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\i.talavyria\\Desktop\\project\\API-Services\\TradeClientFrameService\\BusinessLogicLayer\\BusinessLogicLayer.csproj",
+        "projectUniqueName": "C:\\Users\\i.talavyria\\Desktop\\project\\API\\TradeClientFrameService\\TradeClientFrameService\\BusinessLogicLayer\\BusinessLogicLayer.csproj",
         "projectName": "BusinessLogicLayer",
-        "projectPath": "C:\\Users\\i.talavyria\\Desktop\\project\\API-Services\\TradeClientFrameService\\BusinessLogicLayer\\BusinessLogicLayer.csproj",
+        "projectPath": "C:\\Users\\i.talavyria\\Desktop\\project\\API\\TradeClientFrameService\\TradeClientFrameService\\BusinessLogicLayer\\BusinessLogicLayer.csproj",
         "packagesPath": "C:\\Users\\i.talavyria\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\i.talavyria\\Desktop\\project\\API-Services\\TradeClientFrameService\\BusinessLogicLayer\\obj\\",
+        "outputPath": "C:\\Users\\i.talavyria\\Desktop\\project\\API\\TradeClientFrameService\\TradeClientFrameService\\BusinessLogicLayer\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\i.talavyria\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -28,8 +28,8 @@
           "netcoreapp3.1": {
             "targetAlias": "netcoreapp3.1",
             "projectReferences": {
-              "C:\\Users\\i.talavyria\\Desktop\\project\\API-Services\\TradeClientFrameService\\DataAccessLayer\\DataAccessLayer.csproj": {
-                "projectPath": "C:\\Users\\i.talavyria\\Desktop\\project\\API-Services\\TradeClientFrameService\\DataAccessLayer\\DataAccessLayer.csproj"
+              "C:\\Users\\i.talavyria\\Desktop\\project\\API\\TradeClientFrameService\\TradeClientFrameService\\DataAccessLayer\\DataAccessLayer.csproj": {
+                "projectPath": "C:\\Users\\i.talavyria\\Desktop\\project\\API\\TradeClientFrameService\\TradeClientFrameService\\DataAccessLayer\\DataAccessLayer.csproj"
               }
             }
           }
@@ -76,14 +76,14 @@
         }
       }
     },
-    "C:\\Users\\i.talavyria\\Desktop\\project\\API-Services\\TradeClientFrameService\\DataAccessLayer\\DataAccessLayer.csproj": {
+    "C:\\Users\\i.talavyria\\Desktop\\project\\API\\TradeClientFrameService\\TradeClientFrameService\\DataAccessLayer\\DataAccessLayer.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\i.talavyria\\Desktop\\project\\API-Services\\TradeClientFrameService\\DataAccessLayer\\DataAccessLayer.csproj",
+        "projectUniqueName": "C:\\Users\\i.talavyria\\Desktop\\project\\API\\TradeClientFrameService\\TradeClientFrameService\\DataAccessLayer\\DataAccessLayer.csproj",
         "projectName": "DataAccessLayer",
-        "projectPath": "C:\\Users\\i.talavyria\\Desktop\\project\\API-Services\\TradeClientFrameService\\DataAccessLayer\\DataAccessLayer.csproj",
+        "projectPath": "C:\\Users\\i.talavyria\\Desktop\\project\\API\\TradeClientFrameService\\TradeClientFrameService\\DataAccessLayer\\DataAccessLayer.csproj",
         "packagesPath": "C:\\Users\\i.talavyria\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\i.talavyria\\Desktop\\project\\API-Services\\TradeClientFrameService\\DataAccessLayer\\obj\\",
+        "outputPath": "C:\\Users\\i.talavyria\\Desktop\\project\\API\\TradeClientFrameService\\TradeClientFrameService\\DataAccessLayer\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\i.talavyria\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -146,14 +146,14 @@
         }
       }
     },
-    "C:\\Users\\i.talavyria\\Desktop\\project\\API-Services\\TradeClientFrameService\\PresentationLayer\\PresentationLayer.csproj": {
+    "C:\\Users\\i.talavyria\\Desktop\\project\\API\\TradeClientFrameService\\TradeClientFrameService\\PresentationLayer\\PresentationLayer.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\i.talavyria\\Desktop\\project\\API-Services\\TradeClientFrameService\\PresentationLayer\\PresentationLayer.csproj",
+        "projectUniqueName": "C:\\Users\\i.talavyria\\Desktop\\project\\API\\TradeClientFrameService\\TradeClientFrameService\\PresentationLayer\\PresentationLayer.csproj",
         "projectName": "PresentationLayer",
-        "projectPath": "C:\\Users\\i.talavyria\\Desktop\\project\\API-Services\\TradeClientFrameService\\PresentationLayer\\PresentationLayer.csproj",
+        "projectPath": "C:\\Users\\i.talavyria\\Desktop\\project\\API\\TradeClientFrameService\\TradeClientFrameService\\PresentationLayer\\PresentationLayer.csproj",
         "packagesPath": "C:\\Users\\i.talavyria\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\i.talavyria\\Desktop\\project\\API-Services\\TradeClientFrameService\\PresentationLayer\\obj\\",
+        "outputPath": "C:\\Users\\i.talavyria\\Desktop\\project\\API\\TradeClientFrameService\\TradeClientFrameService\\PresentationLayer\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\i.talavyria\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -170,8 +170,8 @@
           "netcoreapp3.1": {
             "targetAlias": "netcoreapp3.1",
             "projectReferences": {
-              "C:\\Users\\i.talavyria\\Desktop\\project\\API-Services\\TradeClientFrameService\\BusinessLogicLayer\\BusinessLogicLayer.csproj": {
-                "projectPath": "C:\\Users\\i.talavyria\\Desktop\\project\\API-Services\\TradeClientFrameService\\BusinessLogicLayer\\BusinessLogicLayer.csproj"
+              "C:\\Users\\i.talavyria\\Desktop\\project\\API\\TradeClientFrameService\\TradeClientFrameService\\BusinessLogicLayer\\BusinessLogicLayer.csproj": {
+                "projectPath": "C:\\Users\\i.talavyria\\Desktop\\project\\API\\TradeClientFrameService\\TradeClientFrameService\\BusinessLogicLayer\\BusinessLogicLayer.csproj"
               }
             }
           }
@@ -185,6 +185,12 @@
       "frameworks": {
         "netcoreapp3.1": {
           "targetAlias": "netcoreapp3.1",
+          "dependencies": {
+            "Swashbuckle.AspNetCore": {
+              "target": "Package",
+              "version": "[6.2.2, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",

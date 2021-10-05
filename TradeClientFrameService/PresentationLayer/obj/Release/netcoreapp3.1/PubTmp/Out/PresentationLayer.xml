@@ -1,0 +1,74 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>PresentationLayer</name>
+    </assembly>
+    <members>
+        <member name="M:PresentationLayer.Controllers.getImagesController.getAllInOneImage(System.Int32)">
+            <summary>
+            Данні за день, місяць та прогноз 
+            </summary>
+            <param name="id">Номер магазину</param>
+            <remarks>
+            Sample request:
+            
+                 http://cash-img.avrora.lan/getImages/5
+            
+            </remarks>
+            <returns></returns>
+        </member>
+        <member name="M:PresentationLayer.Controllers.getImagesController.getAllInOneImageForGoods(System.String,System.Int32)">
+            <summary>
+            Данні за день, місяць та прогноз для Goods
+            </summary>
+            <param name="key">Ключ</param>
+            <param name="id">Номер магазину</param>
+            <remarks>
+            Sample request:
+            
+                 http://cash-img.avrora.lan/getImages/goods?key=example&amp;id=35
+            
+            </remarks>
+            <returns></returns>
+        </member>
+        <member name="M:PresentationLayer.Controllers.getImagesController.getImagePerDay(System.Int32)">
+            <summary>
+            Данні за день
+            </summary>
+            <param name="id">Номер магазину</param>
+            <remarks>
+            Sample request:
+            
+                 http://cash-img.avrora.lan/getImages/day/5
+            
+            </remarks>
+            <returns></returns>
+        </member>
+        <member name="M:PresentationLayer.Controllers.getImagesController.getImagePerMonth(System.Int32)">
+            <summary>
+            Данні за місяць
+            </summary>
+            <param name="id">Номер магазину</param>
+            <remarks>
+            Sample request:
+            
+                 http://cash-img.avrora.lan/getImages/month/5
+            
+            </remarks>
+            <returns></returns>
+        </member>
+        <member name="M:PresentationLayer.Controllers.getImagesController.getImagePerForecast(System.Int32)">
+            <summary>
+            Прогноз
+            </summary>
+            <param name="id">Номер магазину</param>
+            <remarks>
+            Sample request:
+            
+                 http://cash-img.avrora.lan/getImages/forecast/5
+            
+            </remarks>
+            <returns></returns>
+        </member>
+    </members>
+</doc>

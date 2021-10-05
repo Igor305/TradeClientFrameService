@@ -8,5 +8,6 @@ namespace BusinessLogicLayer.Services.Interfaces
         public Task getImagePerMonth(int stockId);
         public Task getImagePerForecast(int stockId);
         public Task getAllInOneImage(int stockId);
+        public Task getAllInOneImageForGoods(int stockId);
     }
 }
