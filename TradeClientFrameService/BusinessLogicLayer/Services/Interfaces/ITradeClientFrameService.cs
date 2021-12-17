@@ -9,5 +9,6 @@ namespace BusinessLogicLayer.Services.Interfaces
         public Task getImagePerForecast(int stockId);
         public Task getAllInOneImage(int stockId);
         public Task getAllInOneImageForGoods(int stockId);
+        public string formatDecimal(decimal value);
     }
 }

@@ -1066,7 +1066,7 @@ namespace BusinessLogicLayer.Services
             bitmap.Save("PlanForecast.png", System.Drawing.Imaging.ImageFormat.Png);
         }
 
-        private string formatDecimal(decimal value)
+        public string formatDecimal(decimal value)
         {
             string svalue = "";
 

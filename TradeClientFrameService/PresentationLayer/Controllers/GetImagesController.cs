@@ -14,11 +14,13 @@ namespace PresentationLayer.Controllers
     public class getImagesController : ControllerBase
     {
         private readonly ITradeClientFrameService _tradeClientFrameService;
+        private readonly ITradeClientFrameServiceGoodsService _tradeClientFrameServiceGoodsService;
         private readonly IConfiguration _configuration;
 
-        public getImagesController(ITradeClientFrameService tradeClientFrameService, IConfiguration configuration)
+        public getImagesController(ITradeClientFrameService tradeClientFrameService, ITradeClientFrameServiceGoodsService tradeClientFrameServiceGoodsService, IConfiguration configuration)
         {
             _tradeClientFrameService = tradeClientFrameService;
+            _tradeClientFrameServiceGoodsService = tradeClientFrameServiceGoodsService;
             _configuration = configuration;
         }
 
@@ -135,6 +137,34 @@ namespace PresentationLayer.Controllers
             Byte[] file_path = System.IO.File.ReadAllBytes(@"PlanForecast.png");                                                                                                                                                                 //  FileStream fs = new FileStream(path, FileMode.Open);
             string file_type = "image/png";
             string file_name = "PlanForecast.png";
+            return File(file_path, file_type, file_name);
+        }
+
+        /// <summary>
+        /// Данні за день, місяць та прогноз для Goods зі зміною кольору
+        /// </summary>
+        /// <param name="key">Ключ</param>
+        /// <param name="id">Номер магазину</param>
+        /// <remarks>
+        /// Sample request:
+        /// 
+        ///      http://cash-img.avrora.lan/getImages/goods?key=example&amp;id=35
+        /// 
+        /// </remarks>
+        /// <returns></returns>
+        [HttpGet("goods/colored")]
+        public async Task<IActionResult> getImageForGoodsColored([Required][FromQuery] string key, [Required][FromQuery] int id)
+        {
+            if (key != _configuration["Api:Key"])
+            {
+                return StatusCode(500);
+            }
+
+            await _tradeClientFrameServiceGoodsService.getImageColored(id);
+
+            Byte[] file_path = System.IO.File.ReadAllBytes(@"Plan.png");                                                                                                                                                                 //  FileStream fs = new FileStream(path, FileMode.Open);
+            string file_type = "image/png";
+            string file_name = "Plan.png";
             return File(file_path, file_type, file_name);
         }
     }

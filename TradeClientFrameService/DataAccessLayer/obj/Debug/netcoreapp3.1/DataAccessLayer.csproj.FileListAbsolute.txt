@@ -22,3 +22,4 @@ C:\Users\i.talavyria\Desktop\project\API\TradeClientFrameService\TradeClientFram
 C:\Users\i.talavyria\Desktop\project\API\TradeClientFrameService\TradeClientFrameService\DataAccessLayer\obj\Debug\netcoreapp3.1\DataAccessLayer.dll
 C:\Users\i.talavyria\Desktop\project\API\TradeClientFrameService\TradeClientFrameService\DataAccessLayer\obj\Debug\netcoreapp3.1\DataAccessLayer.pdb
 C:\Users\i.talavyria\Desktop\project\API\TradeClientFrameService\TradeClientFrameService\DataAccessLayer\obj\Debug\netcoreapp3.1\DataAccessLayer.genruntimeconfig.cache
+C:\Users\i.talavyria\Desktop\project\API\TradeClientFrameService\TradeClientFrameService\DataAccessLayer\obj\Debug\netcoreapp3.1\DataAccessLayer.GeneratedMSBuildEditorConfig.editorconfig

@@ -70,5 +70,19 @@
             </remarks>
             <returns></returns>
         </member>
+        <member name="M:PresentationLayer.Controllers.getImagesController.getImageForGoodsColored(System.String,System.Int32)">
+            <summary>
+            Данні за день, місяць та прогноз для Goods зі зміною кольору
+            </summary>
+            <param name="key">Ключ</param>
+            <param name="id">Номер магазину</param>
+            <remarks>
+            Sample request:
+            
+                 http://cash-img.avrora.lan/getImages/goods?key=example&amp;id=35
+            
+            </remarks>
+            <returns></returns>
+        </member>
     </members>
 </doc>

@@ -35,6 +35,7 @@ namespace PresentationLayer
             services.AddDbContext<AvroraContext>(opts => opts.UseSqlServer(connectionStringSQL03));
             services.AddScoped<IitExecutionPlanShopRepository, ItExecutionPlanShopRepository>();
             services.AddScoped<ITradeClientFrameService, TradeClientFrameService>();
+            services.AddScoped<ITradeClientFrameServiceGoodsService, TradeClientFrameServiceGoodsService>();
 
             services.AddControllers();
 

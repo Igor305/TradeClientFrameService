@@ -1,9 +1,11 @@
 {
   "version": 2,
-  "dgSpecHash": "d9AFNtFREVKFOnaa7Q+vO/bRZm2aHHqVunpGspu6102myJoGPfs957HEvrsukr5OeYj4sf1DsK0LnziG9fRQsw==",
+  "dgSpecHash": "dI8NLgHDDaD6uougO3GTJonC+TsGYd2s962gV25l3MIjIBGCmiZ1QGpsiXKVHKRaDI6Lp7JcbeSFdomKzVGpRw==",
   "success": true,
   "projectFilePath": "C:\\Users\\i.talavyria\\Desktop\\project\\API\\TradeClientFrameService\\TradeClientFrameService\\PresentationLayer\\PresentationLayer.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\i.talavyria\\.nuget\\packages\\aspose.svg\\21.12.0\\aspose.svg.21.12.0.nupkg.sha512",
+    "C:\\Users\\i.talavyria\\.nuget\\packages\\aspose.words\\21.12.0\\aspose.words.21.12.0.nupkg.sha512",
     "C:\\Users\\i.talavyria\\.nuget\\packages\\automapper\\10.1.1\\automapper.10.1.1.nupkg.sha512",
     "C:\\Users\\i.talavyria\\.nuget\\packages\\microsoft.csharp\\4.7.0\\microsoft.csharp.4.7.0.nupkg.sha512",
     "C:\\Users\\i.talavyria\\.nuget\\packages\\microsoft.data.sqlclient\\2.0.1\\microsoft.data.sqlclient.2.0.1.nupkg.sha512",
@@ -40,6 +42,7 @@
     "C:\\Users\\i.talavyria\\.nuget\\packages\\runtime.win-arm64.runtime.native.system.data.sqlclient.sni\\4.4.0\\runtime.win-arm64.runtime.native.system.data.sqlclient.sni.4.4.0.nupkg.sha512",
     "C:\\Users\\i.talavyria\\.nuget\\packages\\runtime.win-x64.runtime.native.system.data.sqlclient.sni\\4.4.0\\runtime.win-x64.runtime.native.system.data.sqlclient.sni.4.4.0.nupkg.sha512",
     "C:\\Users\\i.talavyria\\.nuget\\packages\\runtime.win-x86.runtime.native.system.data.sqlclient.sni\\4.4.0\\runtime.win-x86.runtime.native.system.data.sqlclient.sni.4.4.0.nupkg.sha512",
+    "C:\\Users\\i.talavyria\\.nuget\\packages\\skiasharp\\2.80.1\\skiasharp.2.80.1.nupkg.sha512",
     "C:\\Users\\i.talavyria\\.nuget\\packages\\swashbuckle.aspnetcore\\6.2.2\\swashbuckle.aspnetcore.6.2.2.nupkg.sha512",
     "C:\\Users\\i.talavyria\\.nuget\\packages\\swashbuckle.aspnetcore.swagger\\6.2.2\\swashbuckle.aspnetcore.swagger.6.2.2.nupkg.sha512",
     "C:\\Users\\i.talavyria\\.nuget\\packages\\swashbuckle.aspnetcore.swaggergen\\6.2.2\\swashbuckle.aspnetcore.swaggergen.6.2.2.nupkg.sha512",
@@ -70,6 +73,7 @@
     "C:\\Users\\i.talavyria\\.nuget\\packages\\system.io.filesystem.primitives\\4.3.0\\system.io.filesystem.primitives.4.3.0.nupkg.sha512",
     "C:\\Users\\i.talavyria\\.nuget\\packages\\system.linq\\4.3.0\\system.linq.4.3.0.nupkg.sha512",
     "C:\\Users\\i.talavyria\\.nuget\\packages\\system.linq.expressions\\4.3.0\\system.linq.expressions.4.3.0.nupkg.sha512",
+    "C:\\Users\\i.talavyria\\.nuget\\packages\\system.memory\\4.5.3\\system.memory.4.5.3.nupkg.sha512",
     "C:\\Users\\i.talavyria\\.nuget\\packages\\system.net.nameresolution\\4.3.0\\system.net.nameresolution.4.3.0.nupkg.sha512",
     "C:\\Users\\i.talavyria\\.nuget\\packages\\system.net.primitives\\4.3.0\\system.net.primitives.4.3.0.nupkg.sha512",
     "C:\\Users\\i.talavyria\\.nuget\\packages\\system.objectmodel\\4.3.0\\system.objectmodel.4.3.0.nupkg.sha512",
