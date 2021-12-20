@@ -162,9 +162,9 @@ namespace PresentationLayer.Controllers
 
             await _tradeClientFrameServiceGoodsService.getImageColored(id);
 
-            Byte[] file_path = System.IO.File.ReadAllBytes(@"Plan.png");                                                                                                                                                                 //  FileStream fs = new FileStream(path, FileMode.Open);
-            string file_type = "image/png";
-            string file_name = "Plan.png";
+            Byte[] file_path = System.IO.File.ReadAllBytes(@"PlanShops.svg");                                                                                                                                                                 //  FileStream fs = new FileStream(path, FileMode.Open);
+            string file_type = "image/svg";
+            string file_name = "PlanShops.svg";
             return File(file_path, file_type, file_name);
         }
     }
