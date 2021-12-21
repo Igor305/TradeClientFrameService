@@ -141,18 +141,18 @@ namespace PresentationLayer.Controllers
         }
 
         /// <summary>
-        /// Данні за день, місяць та прогноз для Goods зі зміною кольору
+        /// Данні за день, місяць та прогноз для Goods із премією
         /// </summary>
         /// <param name="key">Ключ</param>
         /// <param name="id">Номер магазину</param>
         /// <remarks>
         /// Sample request:
         /// 
-        ///      http://cash-img.avrora.lan/getImages/goods?key=example&amp;id=35
+        ///      http://cash-img.avrora.lan/getImages/goods/prise?key=example&amp;id=35
         /// 
         /// </remarks>
         /// <returns></returns>
-        [HttpGet("goods/colored")]
+        [HttpGet("goods/prise")]
         public async Task<IActionResult> getImageForGoodsColored([Required][FromQuery] string key, [Required][FromQuery] int id)
         {
             if (key != _configuration["Api:Key"])

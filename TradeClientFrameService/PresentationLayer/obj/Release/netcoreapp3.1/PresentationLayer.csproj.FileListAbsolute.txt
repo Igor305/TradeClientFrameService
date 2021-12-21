@@ -145,8 +145,6 @@ C:\Users\i.talavyria\Desktop\project\API\TradeClientFrameService\TradeClientFram
 C:\Users\i.talavyria\Desktop\project\API\TradeClientFrameService\TradeClientFrameService\PresentationLayer\obj\Release\netcoreapp3.1\PresentationLayer.csproj.CoreCompileInputs.cache
 C:\Users\i.talavyria\Desktop\project\API\TradeClientFrameService\TradeClientFrameService\PresentationLayer\obj\Release\netcoreapp3.1\PresentationLayer.MvcApplicationPartsAssemblyInfo.cache
 C:\Users\i.talavyria\Desktop\project\API\TradeClientFrameService\TradeClientFrameService\PresentationLayer\obj\Release\netcoreapp3.1\staticwebassets\PresentationLayer.StaticWebAssets.Manifest.cache
-C:\Users\i.talavyria\Desktop\project\API\TradeClientFrameService\TradeClientFrameService\PresentationLayer\obj\Release\netcoreapp3.1\staticwebassets\PresentationLayer.StaticWebAssets.xml
-C:\Users\i.talavyria\Desktop\project\API\TradeClientFrameService\TradeClientFrameService\PresentationLayer\obj\Release\netcoreapp3.1\scopedcss\bundle\PresentationLayer.styles.css
 C:\Users\i.talavyria\Desktop\project\API\TradeClientFrameService\TradeClientFrameService\PresentationLayer\obj\Release\netcoreapp3.1\PresentationLayer.RazorTargetAssemblyInfo.cache
 C:\Users\i.talavyria\Desktop\project\API\TradeClientFrameService\TradeClientFrameService\PresentationLayer\obj\Release\netcoreapp3.1\PresentationLayer.csproj.CopyComplete
 C:\Users\i.talavyria\Desktop\project\API\TradeClientFrameService\TradeClientFrameService\PresentationLayer\obj\Release\netcoreapp3.1\PresentationLayer.dll
@@ -160,3 +158,12 @@ C:\Users\i.talavyria\Desktop\project\API\TradeClientFrameService\TradeClientFram
 C:\Users\i.talavyria\Desktop\project\API\TradeClientFrameService\TradeClientFrameService\PresentationLayer\bin\Release\netcoreapp3.1\BusinessLogicLayer.xml
 C:\Users\i.talavyria\Desktop\project\API\TradeClientFrameService\TradeClientFrameService\PresentationLayer\obj\Release\netcoreapp3.1\PresentationLayer.MvcApplicationPartsAssemblyInfo.cs
 C:\Users\i.talavyria\Desktop\project\API\TradeClientFrameService\TradeClientFrameService\PresentationLayer\obj\Release\netcoreapp3.1\PresentationLayer.xml
+C:\Users\i.talavyria\Desktop\project\API\TradeClientFrameService\TradeClientFrameService\PresentationLayer\bin\Release\netcoreapp3.1\Aspose.SVG.dll
+C:\Users\i.talavyria\Desktop\project\API\TradeClientFrameService\TradeClientFrameService\PresentationLayer\bin\Release\netcoreapp3.1\Aspose.Words.Pdf2Word.dll
+C:\Users\i.talavyria\Desktop\project\API\TradeClientFrameService\TradeClientFrameService\PresentationLayer\bin\Release\netcoreapp3.1\Aspose.Words.dll
+C:\Users\i.talavyria\Desktop\project\API\TradeClientFrameService\TradeClientFrameService\PresentationLayer\bin\Release\netcoreapp3.1\SkiaSharp.dll
+C:\Users\i.talavyria\Desktop\project\API\TradeClientFrameService\TradeClientFrameService\PresentationLayer\bin\Release\netcoreapp3.1\runtimes\osx\native\libSkiaSharp.dylib
+C:\Users\i.talavyria\Desktop\project\API\TradeClientFrameService\TradeClientFrameService\PresentationLayer\bin\Release\netcoreapp3.1\runtimes\win-arm64\native\libSkiaSharp.dll
+C:\Users\i.talavyria\Desktop\project\API\TradeClientFrameService\TradeClientFrameService\PresentationLayer\bin\Release\netcoreapp3.1\runtimes\win-x64\native\libSkiaSharp.dll
+C:\Users\i.talavyria\Desktop\project\API\TradeClientFrameService\TradeClientFrameService\PresentationLayer\bin\Release\netcoreapp3.1\runtimes\win-x86\native\libSkiaSharp.dll
+C:\Users\i.talavyria\Desktop\project\API\TradeClientFrameService\TradeClientFrameService\PresentationLayer\obj\Release\netcoreapp3.1\PresentationLayer.GeneratedMSBuildEditorConfig.editorconfig

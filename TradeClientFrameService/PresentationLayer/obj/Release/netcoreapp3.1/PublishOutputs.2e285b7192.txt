@@ -5,6 +5,9 @@ C:\Users\i.talavyria\Desktop\project\API\TradeClientFrameService\TradeClientFram
 C:\Users\i.talavyria\Desktop\project\API\TradeClientFrameService\TradeClientFrameService\PresentationLayer\obj\Release\netcoreapp3.1\PubTmp\Out\PresentationLayer.deps.json
 C:\Users\i.talavyria\Desktop\project\API\TradeClientFrameService\TradeClientFrameService\PresentationLayer\obj\Release\netcoreapp3.1\PubTmp\Out\PresentationLayer.runtimeconfig.json
 C:\Users\i.talavyria\Desktop\project\API\TradeClientFrameService\TradeClientFrameService\PresentationLayer\obj\Release\netcoreapp3.1\PubTmp\Out\PresentationLayer.pdb
+C:\Users\i.talavyria\Desktop\project\API\TradeClientFrameService\TradeClientFrameService\PresentationLayer\obj\Release\netcoreapp3.1\PubTmp\Out\Aspose.SVG.dll
+C:\Users\i.talavyria\Desktop\project\API\TradeClientFrameService\TradeClientFrameService\PresentationLayer\obj\Release\netcoreapp3.1\PubTmp\Out\Aspose.Words.Pdf2Word.dll
+C:\Users\i.talavyria\Desktop\project\API\TradeClientFrameService\TradeClientFrameService\PresentationLayer\obj\Release\netcoreapp3.1\PubTmp\Out\Aspose.Words.dll
 C:\Users\i.talavyria\Desktop\project\API\TradeClientFrameService\TradeClientFrameService\PresentationLayer\obj\Release\netcoreapp3.1\PubTmp\Out\AutoMapper.dll
 C:\Users\i.talavyria\Desktop\project\API\TradeClientFrameService\TradeClientFrameService\PresentationLayer\obj\Release\netcoreapp3.1\PubTmp\Out\Microsoft.Data.SqlClient.dll
 C:\Users\i.talavyria\Desktop\project\API\TradeClientFrameService\TradeClientFrameService\PresentationLayer\obj\Release\netcoreapp3.1\PubTmp\Out\Microsoft.EntityFrameworkCore.dll
@@ -29,6 +32,7 @@ C:\Users\i.talavyria\Desktop\project\API\TradeClientFrameService\TradeClientFram
 C:\Users\i.talavyria\Desktop\project\API\TradeClientFrameService\TradeClientFrameService\PresentationLayer\obj\Release\netcoreapp3.1\PubTmp\Out\Microsoft.OpenApi.dll
 C:\Users\i.talavyria\Desktop\project\API\TradeClientFrameService\TradeClientFrameService\PresentationLayer\obj\Release\netcoreapp3.1\PubTmp\Out\Microsoft.Win32.SystemEvents.dll
 C:\Users\i.talavyria\Desktop\project\API\TradeClientFrameService\TradeClientFrameService\PresentationLayer\obj\Release\netcoreapp3.1\PubTmp\Out\Newtonsoft.Json.dll
+C:\Users\i.talavyria\Desktop\project\API\TradeClientFrameService\TradeClientFrameService\PresentationLayer\obj\Release\netcoreapp3.1\PubTmp\Out\SkiaSharp.dll
 C:\Users\i.talavyria\Desktop\project\API\TradeClientFrameService\TradeClientFrameService\PresentationLayer\obj\Release\netcoreapp3.1\PubTmp\Out\Swashbuckle.AspNetCore.Swagger.dll
 C:\Users\i.talavyria\Desktop\project\API\TradeClientFrameService\TradeClientFrameService\PresentationLayer\obj\Release\netcoreapp3.1\PubTmp\Out\Swashbuckle.AspNetCore.SwaggerGen.dll
 C:\Users\i.talavyria\Desktop\project\API\TradeClientFrameService\TradeClientFrameService\PresentationLayer\obj\Release\netcoreapp3.1\PubTmp\Out\Swashbuckle.AspNetCore.SwaggerUI.dll
@@ -55,6 +59,10 @@ C:\Users\i.talavyria\Desktop\project\API\TradeClientFrameService\TradeClientFram
 C:\Users\i.talavyria\Desktop\project\API\TradeClientFrameService\TradeClientFrameService\PresentationLayer\obj\Release\netcoreapp3.1\PubTmp\Out\runtimes\win-arm64\native\sni.dll
 C:\Users\i.talavyria\Desktop\project\API\TradeClientFrameService\TradeClientFrameService\PresentationLayer\obj\Release\netcoreapp3.1\PubTmp\Out\runtimes\win-x64\native\sni.dll
 C:\Users\i.talavyria\Desktop\project\API\TradeClientFrameService\TradeClientFrameService\PresentationLayer\obj\Release\netcoreapp3.1\PubTmp\Out\runtimes\win-x86\native\sni.dll
+C:\Users\i.talavyria\Desktop\project\API\TradeClientFrameService\TradeClientFrameService\PresentationLayer\obj\Release\netcoreapp3.1\PubTmp\Out\runtimes\osx\native\libSkiaSharp.dylib
+C:\Users\i.talavyria\Desktop\project\API\TradeClientFrameService\TradeClientFrameService\PresentationLayer\obj\Release\netcoreapp3.1\PubTmp\Out\runtimes\win-arm64\native\libSkiaSharp.dll
+C:\Users\i.talavyria\Desktop\project\API\TradeClientFrameService\TradeClientFrameService\PresentationLayer\obj\Release\netcoreapp3.1\PubTmp\Out\runtimes\win-x64\native\libSkiaSharp.dll
+C:\Users\i.talavyria\Desktop\project\API\TradeClientFrameService\TradeClientFrameService\PresentationLayer\obj\Release\netcoreapp3.1\PubTmp\Out\runtimes\win-x86\native\libSkiaSharp.dll
 C:\Users\i.talavyria\Desktop\project\API\TradeClientFrameService\TradeClientFrameService\PresentationLayer\obj\Release\netcoreapp3.1\PubTmp\Out\runtimes\unix\lib\netcoreapp2.1\System.Data.SqlClient.dll
 C:\Users\i.talavyria\Desktop\project\API\TradeClientFrameService\TradeClientFrameService\PresentationLayer\obj\Release\netcoreapp3.1\PubTmp\Out\runtimes\win\lib\netcoreapp2.1\System.Data.SqlClient.dll
 C:\Users\i.talavyria\Desktop\project\API\TradeClientFrameService\TradeClientFrameService\PresentationLayer\obj\Release\netcoreapp3.1\PubTmp\Out\runtimes\unix\lib\netcoreapp3.0\System.Drawing.Common.dll

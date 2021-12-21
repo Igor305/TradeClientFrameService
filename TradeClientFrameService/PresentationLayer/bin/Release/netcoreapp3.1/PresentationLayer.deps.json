@@ -205,7 +205,7 @@
           "System.Linq.Expressions.Reference": "4.2.2.0",
           "System.Linq.Parallel": "4.0.4.0",
           "System.Linq.Queryable": "4.0.4.0",
-          "System.Memory": "4.2.1.0",
+          "System.Memory.Reference": "4.2.1.0",
           "System.Net": "4.0.0.0",
           "System.Net.Http": "4.2.2.0",
           "System.Net.HttpListener": "4.0.2.0",
@@ -309,6 +309,45 @@
         },
         "compile": {
           "PresentationLayer.dll": {}
+        }
+      },
+      "Aspose.SVG/21.12.0": {
+        "dependencies": {
+          "System.Drawing.Common": "5.0.2",
+          "System.Security.Permissions": "4.7.0",
+          "System.Text.Encoding.CodePages": "4.7.0"
+        },
+        "runtime": {
+          "lib/netstandard2.0/Aspose.SVG.dll": {
+            "assemblyVersion": "21.12.0.0",
+            "fileVersion": "21.12.0.0"
+          }
+        },
+        "compile": {
+          "lib/netstandard2.0/Aspose.SVG.dll": {}
+        }
+      },
+      "Aspose.Words/21.12.0": {
+        "dependencies": {
+          "Microsoft.Win32.Registry": "4.7.0",
+          "SkiaSharp": "2.80.1",
+          "System.Reflection.Emit": "4.7.0",
+          "System.Reflection.Emit.ILGeneration": "4.3.0",
+          "System.Text.Encoding.CodePages": "4.7.0"
+        },
+        "runtime": {
+          "lib/netstandard2.0/Aspose.Words.Pdf2Word.dll": {
+            "assemblyVersion": "21.12.0.0",
+            "fileVersion": "21.12.0.0"
+          },
+          "lib/netstandard2.0/Aspose.Words.dll": {
+            "assemblyVersion": "21.12.0.0",
+            "fileVersion": "21.12.0.0"
+          }
+        },
+        "compile": {
+          "lib/netstandard2.0/Aspose.Words.Pdf2Word.dll": {},
+          "lib/netstandard2.0/Aspose.Words.dll": {}
         }
       },
       "AutoMapper/10.1.1": {
@@ -807,6 +846,42 @@
           }
         }
       },
+      "SkiaSharp/2.80.1": {
+        "dependencies": {
+          "System.Memory": "4.5.3"
+        },
+        "runtime": {
+          "lib/netstandard2.0/SkiaSharp.dll": {
+            "assemblyVersion": "2.80.0.0",
+            "fileVersion": "2.80.1.0"
+          }
+        },
+        "runtimeTargets": {
+          "runtimes/osx/native/libSkiaSharp.dylib": {
+            "rid": "osx",
+            "assetType": "native",
+            "fileVersion": "0.0.0.0"
+          },
+          "runtimes/win-arm64/native/libSkiaSharp.dll": {
+            "rid": "win-arm64",
+            "assetType": "native",
+            "fileVersion": "0.0.0.0"
+          },
+          "runtimes/win-x64/native/libSkiaSharp.dll": {
+            "rid": "win-x64",
+            "assetType": "native",
+            "fileVersion": "0.0.0.0"
+          },
+          "runtimes/win-x86/native/libSkiaSharp.dll": {
+            "rid": "win-x86",
+            "assetType": "native",
+            "fileVersion": "0.0.0.0"
+          }
+        },
+        "compile": {
+          "lib/netstandard2.0/SkiaSharp.dll": {}
+        }
+      },
       "Swashbuckle.AspNetCore/6.2.2": {
         "dependencies": {
           "Microsoft.Extensions.ApiDescription.Server": "3.0.0",
@@ -1164,6 +1239,7 @@
           "System.Threading": "4.3.0"
         }
       },
+      "System.Memory/4.5.3": {},
       "System.Net.NameResolution/4.3.0": {
         "dependencies": {
           "Microsoft.NETCore.Platforms": "5.0.0",
@@ -1543,6 +1619,8 @@
       },
       "BusinessLogicLayer/1.0.0": {
         "dependencies": {
+          "Aspose.SVG": "21.12.0",
+          "Aspose.Words": "21.12.0",
           "AutoMapper": "10.1.1",
           "DataAccessLayer": "1.0.0",
           "System.Drawing.Common": "5.0.2",
@@ -2599,7 +2677,7 @@
         },
         "compileOnly": true
       },
-      "System.Memory/4.2.1.0": {
+      "System.Memory.Reference/4.2.1.0": {
         "compile": {
           "System.Memory.dll": {}
         },
@@ -3195,6 +3273,20 @@
       "serviceable": false,
       "sha512": ""
     },
+    "Aspose.SVG/21.12.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-qY5FkN4Z6nrfIHd5ahNeNXpOHWTvc/vNu0ehx4BePvCrH043y99xG8caRmXUPKsOoUUl0jqC//1K3w1/FEuMyw==",
+      "path": "aspose.svg/21.12.0",
+      "hashPath": "aspose.svg.21.12.0.nupkg.sha512"
+    },
+    "Aspose.Words/21.12.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-KFVF2iJrHm/ufztEl5C1JM+1xNbDCq2X+Bf3aGGa5kagq3Hb4aJ5z0HGzIhCVEQz7Y1FUHIOapT5gR7YLTLpPw==",
+      "path": "aspose.words/21.12.0",
+      "hashPath": "aspose.words.21.12.0.nupkg.sha512"
+    },
     "AutoMapper/10.1.1": {
       "type": "package",
       "serviceable": true,
@@ -3447,6 +3539,13 @@
       "path": "runtime.win-x86.runtime.native.system.data.sqlclient.sni/4.4.0",
       "hashPath": "runtime.win-x86.runtime.native.system.data.sqlclient.sni.4.4.0.nupkg.sha512"
     },
+    "SkiaSharp/2.80.1": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-CiQwnDzG+1JNGzjAN9G/9n/lJgUVA/NPOFgSlEtu6c7qQ0O7P1tMjrXp/+PtWfX0xyyY9ABsFAZK2kW34U7r/A==",
+      "path": "skiasharp/2.80.1",
+      "hashPath": "skiasharp.2.80.1.nupkg.sha512"
+    },
     "Swashbuckle.AspNetCore/6.2.2": {
       "type": "package",
       "serviceable": true,
@@ -3656,6 +3755,13 @@
       "sha512": "sha512-PGKkrd2khG4CnlyJwxwwaWWiSiWFNBGlgXvJpeO0xCXrZ89ODrQ6tjEWS/kOqZ8GwEOUATtKtzp1eRgmYNfclg==",
       "path": "system.linq.expressions/4.3.0",
       "hashPath": "system.linq.expressions.4.3.0.nupkg.sha512"
+    },
+    "System.Memory/4.5.3": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-3oDzvc/zzetpTKWMShs1AADwZjQ/36HnsufHRPcOjyRAAMLDlu2iD33MBI2opxnezcVUtXyqDXXjoFMOU9c7SA==",
+      "path": "system.memory/4.5.3",
+      "hashPath": "system.memory.4.5.3.nupkg.sha512"
     },
     "System.Net.NameResolution/4.3.0": {
       "type": "package",
@@ -4814,7 +4920,7 @@
       "serviceable": false,
       "sha512": ""
     },
-    "System.Memory/4.2.1.0": {
+    "System.Memory.Reference/4.2.1.0": {
       "type": "referenceassembly",
       "serviceable": false,
       "sha512": ""

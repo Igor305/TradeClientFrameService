@@ -5,7 +5,6 @@ using BusinessLogicLayer.Services.Interfaces;
 using DataAccessLayer.Entities;
 using DataAccessLayer.Repositories.Interfaces;
 using System;
-using System.Drawing.Text;
 using System.IO;
 using System.Threading.Tasks;
 
@@ -49,22 +48,12 @@ namespace BusinessLogicLayer.Services
 
         public void getImage(ItExecutionPlanShopModel itExecutionPlanShopModel)
         {
-           /*<defs>
-                <style type="text/css">@import url("https://fonts.googleapis.com/css?family=Montserrat:400,500,80");
-
-                </style>
-            </defs>
-           */
             using (var document = new SVGDocument())
             {
                 var svgElement = document.RootElement;
 
                 svgElement.SetAttribute("height", "1270px");
                 svgElement.SetAttribute("width", "450px");
-
-                //SVGStyleElement styleElement = (SVGStyleElement)document.CreateElementNS(SvgNamespace, "style");
-                //styleElement.Type = "text/css";
-                //styleElement.SetAttribute("@font-face", "font-family:\"Bitstream Vera Serif Bold\"; src: url(\"https://mdn.mozillademos.org/files/2468/VeraSeBd.ttf\");");
 
                 // Today          
 
@@ -95,8 +84,8 @@ namespace BusinessLogicLayer.Services
                 factDayText.SetAttribute("height", "44px");
                 factDayText.SetAttribute("width", "102px");
                 factDayText.SetAttribute("x", "180px");
-                factDayText.SetAttribute("y", "308px");
-                factDayText.Style.FontFamily = "Montserrat Bold";
+                factDayText.SetAttribute("y", "310px");
+                factDayText.Style.FontFamily = "Montserrat";
                 factDayText.Style.FontSize = "14px";
                 factDayText.Style.FontWeight = "500";
                 factDayText.TextContent = $"Факт:";
@@ -105,9 +94,9 @@ namespace BusinessLogicLayer.Services
 
                 factDay.SetAttribute("height", "44px");
                 factDay.SetAttribute("width", "102px");
-                factDay.SetAttribute("x", "220px");
-                factDay.SetAttribute("y", "309px");
-                factDay.Style.FontFamily = "Montserrat Black";
+                factDay.SetAttribute("x", "225px");
+                factDay.SetAttribute("y", "311px");
+                factDay.Style.FontFamily = "Montserrat";
                 factDay.Style.FontSize = "14px";
                 factDay.Style.FontWeight = "500";
 
@@ -127,20 +116,20 @@ namespace BusinessLogicLayer.Services
                 planDayText.SetAttribute("width", "102px");
                 planDayText.SetAttribute("x", "180px");
                 planDayText.SetAttribute("y", "328px");
-                planDayText.Style.FontFamily = "sans-serif";
+                planDayText.Style.FontFamily = "Montserrat";
                 planDayText.Style.FontSize = "14px";
-                planDayText.Style.FontWeight = "100";
+                planDayText.Style.FontWeight = "500";
                 planDayText.TextContent = $"План:";
 
                 SVGTextElement planDay = (SVGTextElement)document.CreateElementNS(SvgNamespace, "text");
 
                 planDay.SetAttribute("height", "44px");
                 planDay.SetAttribute("width", "102px");
-                planDay.SetAttribute("x", "220px");
+                planDay.SetAttribute("x", "225px");
                 planDay.SetAttribute("y", "329px");
-                planDay.Style.FontFamily = "sans-serif";
+                planDay.Style.FontFamily = "Montserrat";
                 planDay.Style.FontSize = "14px";
-                planDay.Style.FontWeight = "100";
+                planDay.Style.FontWeight = "500";
 
                 Decimal decPlanDay = 0;
 
@@ -159,22 +148,30 @@ namespace BusinessLogicLayer.Services
                 decimal dashDay = 597 - Math.Round(decPercentForDay * 597 / 100);
                 decimal dashDayWhite = 0;
 
-                if (dashDay >= 597)
-                {
-                    dashDayWhite = 0;
-                }
-                else
-                {
-                    dashDayWhite = dashDay - 604;
-                }
                 circleDayStatus.Cx.BaseVal.Value = 215.5F;
                 circleDayStatus.Cy.BaseVal.Value = 285.5F;
                 circleDayStatus.R.BaseVal.Value = 95F;
                 circleDayStatus.SetAttribute("fill", "none");
                 circleDayStatus.SetAttribute("stroke", colorDay);
                 circleDayStatus.SetAttribute("transform", "rotate(-90,220,285)");
-                circleDayStatus.SetAttribute("stroke-width", "15");           
+                circleDayStatus.SetAttribute("stroke-width", "17");
                 circleDayStatus.SetAttribute("stroke-dasharray", "597");
+
+                if (dashDay >= 597)
+                {
+                    dashDayWhite = 0;
+                }
+                else if (dashDay < 0)
+                {
+                    dashDayWhite = 597 + dashDay;
+                    dashDay -= 4;
+                    circleDayStatus.SetAttribute("transform", "rotate(-92,219,286)");
+                }
+                else
+                {
+                    dashDayWhite = dashDay - 604;
+                }
+
                 circleDayStatus.SetAttribute("stroke-dashoffset", $"{dashDay}");
                
                 SVGCircleElement circleDay = (SVGCircleElement)document.CreateElementNS(SvgNamespace, "circle");
@@ -215,9 +212,9 @@ namespace BusinessLogicLayer.Services
 
                 factMonthText.SetAttribute("height", "44px");
                 factMonthText.SetAttribute("width", "102px");
-                factMonthText.SetAttribute("x", "175px");
+                factMonthText.SetAttribute("x", "170px");
                 factMonthText.SetAttribute("y", "610px");
-                factMonthText.Style.FontFamily = "sans-serif";
+                factMonthText.Style.FontFamily = "Montserrat";
                 factMonthText.Style.FontSize = "14px";
                 factMonthText.Style.FontWeight = "500";
                 factMonthText.TextContent = $"Факт:";
@@ -228,7 +225,7 @@ namespace BusinessLogicLayer.Services
                 factMonth.SetAttribute("width", "102px");
                 factMonth.SetAttribute("x", "215px");
                 factMonth.SetAttribute("y", "611px");
-                factMonth.Style.FontFamily = "sans-serif";
+                factMonth.Style.FontFamily = "Montserrat";
                 factMonth.Style.FontSize = "14px";
                 factMonth.Style.FontWeight = "500";
 
@@ -246,9 +243,9 @@ namespace BusinessLogicLayer.Services
 
                 planMonthText.SetAttribute("height", "44px");
                 planMonthText.SetAttribute("width", "102px");
-                planMonthText.SetAttribute("x", "175px");
+                planMonthText.SetAttribute("x", "170px");
                 planMonthText.SetAttribute("y", "630px");
-                planMonthText.Style.FontFamily = "sans-serif";
+                planMonthText.Style.FontFamily = "Montserrat";
                 planMonthText.Style.FontSize = "14px";
                 planMonthText.Style.FontWeight = "500";
                 planMonthText.TextContent = $"План:";
@@ -259,7 +256,7 @@ namespace BusinessLogicLayer.Services
                 planMonth.SetAttribute("width", "102px");
                 planMonth.SetAttribute("x", "215px");
                 planMonth.SetAttribute("y", "631px");
-                planMonth.Style.FontFamily = "sans-serif";
+                planMonth.Style.FontFamily = "Montserrat";
                 planMonth.Style.FontSize = "14px";
                 planMonth.Style.FontWeight = "500";
 
@@ -280,23 +277,30 @@ namespace BusinessLogicLayer.Services
                 decimal dashMonth = 597 - Math.Round(decPercentForMonth * 597 / 100);
                 decimal dashMonthWhite = 0;
 
-                if (dashMonth >= 597)
-                {
-                    dashMonthWhite = 0;
-                }
-                else
-                {
-                    dashMonthWhite = dashMonth - 604;
-                }
-
                 circleMonthStatus.Cx.BaseVal.Value = 215.5F;
                 circleMonthStatus.Cy.BaseVal.Value = 581.5F;
                 circleMonthStatus.R.BaseVal.Value = 95F;
                 circleMonthStatus.SetAttribute("fill", "none");
                 circleMonthStatus.SetAttribute("stroke", colorMonth);
                 circleMonthStatus.SetAttribute("transform", "rotate(-90,220,582)");
-                circleMonthStatus.SetAttribute("stroke-width", "15");
+                circleMonthStatus.SetAttribute("stroke-width", "17");
                 circleMonthStatus.SetAttribute("stroke-dasharray", "597");
+
+                if (dashMonth >= 597)
+                {
+                    dashMonthWhite = 0;
+                }
+                else if (dashMonth < 0)
+                {
+                    dashMonthWhite = 597 + dashMonth;
+                    dashMonth -= 4;
+                    circleMonthStatus.SetAttribute("transform", "rotate(-92,219,583)");
+                }
+                else
+                {
+                    dashMonthWhite = dashMonth - 604;
+                }
+                
                 circleMonthStatus.SetAttribute("stroke-dashoffset", $"{dashMonth}");
 
                 SVGCircleElement circleMonth = (SVGCircleElement)document.CreateElementNS(SvgNamespace, "circle");
@@ -341,25 +345,32 @@ namespace BusinessLogicLayer.Services
                 decimal dashForecast = 597 - Math.Round(decPercentForForecast * 597 / 100);
                 decimal dashForecastWhite = 0;
 
+                circleForecastStatus.Cx.BaseVal.Value = 220.5F;
+                circleForecastStatus.Cy.BaseVal.Value = 861.5F;
+                circleForecastStatus.R.BaseVal.Value = 95F;
+                circleForecastStatus.SetAttribute("fill", "none");
+                circleForecastStatus.SetAttribute("stroke", colorForecast.Item1);
+                circleForecastStatus.SetAttribute("stroke-width", "17");
+                circleForecastStatus.SetAttribute("transform", "rotate(-90,225,865)");
+                circleForecastStatus.SetAttribute("stroke-dasharray", "597");
+
                 if (dashForecast >= 597)
                 {
                     dashForecastWhite = 0;
+                }
+                else if (dashForecast < 0)
+                {
+                    dashForecastWhite = 597 + dashForecast;
+                    dashForecast -= 4;
+                    circleForecastStatus.SetAttribute("transform", "rotate(-92,224,866)");
                 }
                 else
                 {
                     dashForecastWhite = dashForecast - 604;
                 }
 
-                circleForecastStatus.Cx.BaseVal.Value = 220.5F;
-                circleForecastStatus.Cy.BaseVal.Value = 861.5F;
-                circleForecastStatus.R.BaseVal.Value = 95F;
-                circleForecastStatus.SetAttribute("fill", "none");
-                circleForecastStatus.SetAttribute("stroke", colorForecast.Item1);
-                circleForecastStatus.SetAttribute("transform", "rotate(-90,225,865)");
-                circleForecastStatus.SetAttribute("stroke-width", "15");
-                circleForecastStatus.SetAttribute("stroke-dasharray", "597");
                 circleForecastStatus.SetAttribute("stroke-dashoffset", $"{dashForecast}");
-                
+
                 SVGCircleElement circleForecast = (SVGCircleElement)document.CreateElementNS(SvgNamespace, "circle");
 
                 circleForecast.Cx.BaseVal.Value = 220.5F;
@@ -444,8 +455,13 @@ namespace BusinessLogicLayer.Services
 
                 svgElement.InsertBefore(backgound, svgElement.FirstChild);
 
+                // import font
+
                 SVGDefsElement defsElement = (SVGDefsElement)document.CreateElementNS(SvgNamespace, "defs");
-                defsElement.InnerHTML = "<style type = \"text/css\">ewr</style>";
+
+                string import = "<link xmlns=\"http://www.w3.org/1999/xhtml\" href=\"https://fonts.googleapis.com/css?family=Montserrat:400,500,80\" type=\"text/css\" rel=\"stylesheet\" />";
+
+                defsElement.InnerHTML = $"{import}";
                 svgElement.InsertBefore(defsElement, svgElement.FirstChild);
                 document.Save(documentPath);
             }
