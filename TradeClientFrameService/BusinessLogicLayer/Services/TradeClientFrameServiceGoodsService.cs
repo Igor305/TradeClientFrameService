@@ -424,7 +424,7 @@ namespace BusinessLogicLayer.Services
 
                     //Backgound
 
-                    XDocument backgroundFile = XDocument.Load("images//empty.svg");
+                    XDocument backgroundFile = XDocument.Load("../images/empty.svg");
 
                     SVGElement b = (SVGElement)document.CreateElementNS(SvgNamespace, "svg");
                     b.InnerHTML = backgroundFile.ToString();
@@ -473,12 +473,12 @@ namespace BusinessLogicLayer.Services
         private (string, string) getColor(decimal value)
         {
             string color = "#38C421";
-            string path = "images//gobletGray.svg";
+            string path = "../images/gobletGray.svg";
 
-            if (value <= 80) { color = "#999999"; path = "images//gobletGray.svg"; }
-            if (value > 80 && value <= 100) { color = "#E30613"; path = "images//gobletRed.svg"; }
-            if (value > 100 && value <= 105) { color = "#FFDD00"; path = "images//gobletYellow.svg"; }
-            if (value > 105) { color = "#38C321"; path = "images//gobletGreen.svg"; }
+            if (value <= 80) { color = "#999999"; path = "../images/gobletGray.svg"; }
+            if (value > 80 && value <= 100) { color = "#E30613"; path = "../images/gobletRed.svg"; }
+            if (value > 100 && value <= 105) { color = "#FFDD00"; path = "../images/gobletYellow.svg"; }
+            if (value > 105) { color = "#38C321"; path = "../images/gobletGreen.svg"; }
 
             var result = (color, path);
             return result;

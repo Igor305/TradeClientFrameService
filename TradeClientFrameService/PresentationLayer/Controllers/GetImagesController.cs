@@ -148,7 +148,7 @@ namespace PresentationLayer.Controllers
         /// <remarks>
         /// Sample request:
         /// 
-        ///      http://cash-img.avrora.lan/getImages/goods/prise?key=example&amp;id=35
+        ///      http://cash-img.avrora.lan/getImages/goods/prise?key=example&amp;id=5
         /// 
         /// </remarks>
         /// <returns></returns>
