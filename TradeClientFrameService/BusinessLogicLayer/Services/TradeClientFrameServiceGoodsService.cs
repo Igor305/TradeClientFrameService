@@ -393,15 +393,15 @@ namespace BusinessLogicLayer.Services
 
                     decimal percentPrize = 0.0m;
 
-                    if (decPercentForMonth <= 80) percentPrize = 0.0m;
-                    else if (decPercentForMonth > 80 && decPercentForMonth <= 100) percentPrize = 0.3m;
-                    else if (decPercentForMonth > 100 && decPercentForMonth <= 105) percentPrize = 0.7m;
-                    else if (decPercentForMonth > 105 && decPercentForMonth <= 110) percentPrize = 0.9m;
-                    else if (decPercentForMonth > 110 && decPercentForMonth <= 112) percentPrize = 1.1m;
-                    else if (decPercentForMonth > 112) percentPrize = 1.3m;
+                    if (decPercentForForecast <= 80) percentPrize = 0.0m;
+                    else if (decPercentForForecast > 80 && decPercentForForecast <= 100) percentPrize = 0.3m;
+                    else if (decPercentForForecast > 100 && decPercentForForecast <= 105) percentPrize = 0.7m;
+                    else if (decPercentForForecast > 105 && decPercentForForecast <= 110) percentPrize = 0.9m;
+                    else if (decPercentForForecast > 110 && decPercentForForecast <= 112) percentPrize = 1.1m;
+                    else if (decPercentForForecast > 112) percentPrize = 1.3m;
 
                     var factPrize = Math.Truncate(decFactMonth / 100 * percentPrize);
-
+                    
                     SVGTextElement prize = (SVGTextElement)document.CreateElementNS(SvgNamespace, "text");
 
                     prize.SetAttribute("height", "44px");
