@@ -57,7 +57,7 @@ namespace BusinessLogicLayer.Services
                 {
                     var svgElement = document.RootElement;
 
-                    svgElement.SetAttribute("height", "1270px");
+                    svgElement.SetAttribute("height", "1190px");
                     svgElement.SetAttribute("width", "450px");
 
                     // Today          
@@ -67,7 +67,7 @@ namespace BusinessLogicLayer.Services
                     percentForDay.SetAttribute("height", "44px");
                     percentForDay.SetAttribute("width", "102px");
                     percentForDay.SetAttribute("x", "50%");
-                    percentForDay.SetAttribute("y", "278px");
+                    percentForDay.SetAttribute("y", "208px");
                     percentForDay.SetAttribute("text-anchor", "middle");
                     percentForDay.Style.FontFamily = "Montserrat";
                     percentForDay.Style.LineHeight = "44px";
@@ -88,10 +88,10 @@ namespace BusinessLogicLayer.Services
 
                     factDayText.SetAttribute("height", "44px");
                     factDayText.SetAttribute("width", "102px");
-                    factDayText.SetAttribute("x", "180px");
-                    factDayText.SetAttribute("y", "310px");
+                    factDayText.SetAttribute("x", "175px");
+                    factDayText.SetAttribute("y", "240px");
                     factDayText.Style.FontFamily = "Montserrat";
-                    factDayText.Style.FontSize = "14px";
+                    factDayText.Style.FontSize = "16px";
                     factDayText.Style.FontWeight = "500";
                     factDayText.TextContent = $"Факт:";
 
@@ -100,9 +100,9 @@ namespace BusinessLogicLayer.Services
                     factDay.SetAttribute("height", "44px");
                     factDay.SetAttribute("width", "102px");
                     factDay.SetAttribute("x", "225px");
-                    factDay.SetAttribute("y", "311px");
+                    factDay.SetAttribute("y", "241px");
                     factDay.Style.FontFamily = "Montserrat";
-                    factDay.Style.FontSize = "14px";
+                    factDay.Style.FontSize = "16px";
                     factDay.Style.FontWeight = "500";
 
                     Decimal decFactDay = 0;
@@ -119,10 +119,10 @@ namespace BusinessLogicLayer.Services
 
                     planDayText.SetAttribute("height", "44px");
                     planDayText.SetAttribute("width", "102px");
-                    planDayText.SetAttribute("x", "180px");
-                    planDayText.SetAttribute("y", "328px");
+                    planDayText.SetAttribute("x", "170px");
+                    planDayText.SetAttribute("y", "258px");
                     planDayText.Style.FontFamily = "Montserrat";
-                    planDayText.Style.FontSize = "14px";
+                    planDayText.Style.FontSize = "16px";
                     planDayText.Style.FontWeight = "500";
                     planDayText.TextContent = $"План:";
 
@@ -131,9 +131,9 @@ namespace BusinessLogicLayer.Services
                     planDay.SetAttribute("height", "44px");
                     planDay.SetAttribute("width", "102px");
                     planDay.SetAttribute("x", "225px");
-                    planDay.SetAttribute("y", "329px");
+                    planDay.SetAttribute("y", "259px");
                     planDay.Style.FontFamily = "Montserrat";
-                    planDay.Style.FontSize = "14px";
+                    planDay.Style.FontSize = "16px";
                     planDay.Style.FontWeight = "500";
 
                     Decimal decPlanDay = 0;
@@ -153,7 +153,7 @@ namespace BusinessLogicLayer.Services
                     decimal dashDay = 597 - Math.Round(decPercentForDay * 597 / 100);
                     decimal dashDayWhite = 0;
 
-                    circleDayStatus.Cx.BaseVal.Value = 215.5F;
+                    circleDayStatus.Cx.BaseVal.Value = 285.5F;
                     circleDayStatus.Cy.BaseVal.Value = 285.5F;
                     circleDayStatus.R.BaseVal.Value = 95F;
                     circleDayStatus.SetAttribute("fill", "none");
@@ -181,7 +181,7 @@ namespace BusinessLogicLayer.Services
 
                     SVGCircleElement circleDay = (SVGCircleElement)document.CreateElementNS(SvgNamespace, "circle");
 
-                    circleDay.Cx.BaseVal.Value = 215.5F;
+                    circleDay.Cx.BaseVal.Value = 285.5F;
                     circleDay.Cy.BaseVal.Value = 285.5F;
                     circleDay.R.BaseVal.Value = 95F;
                     circleDay.SetAttribute("fill", "none");
@@ -198,7 +198,7 @@ namespace BusinessLogicLayer.Services
                     percentForMonth.SetAttribute("height", "44px");
                     percentForMonth.SetAttribute("width", "102px");
                     percentForMonth.SetAttribute("x", "50%");
-                    percentForMonth.SetAttribute("y", "576px");
+                    percentForMonth.SetAttribute("y", "506px");
                     percentForMonth.SetAttribute("text-anchor", "middle");
                     percentForMonth.Style.FontFamily = "Montserrat";
                     percentForMonth.Style.FontSize = "36px";
@@ -217,10 +217,10 @@ namespace BusinessLogicLayer.Services
 
                     factMonthText.SetAttribute("height", "44px");
                     factMonthText.SetAttribute("width", "102px");
-                    factMonthText.SetAttribute("x", "170px");
-                    factMonthText.SetAttribute("y", "610px");
+                    factMonthText.SetAttribute("x", "160px");
+                    factMonthText.SetAttribute("y", "540px");
                     factMonthText.Style.FontFamily = "Montserrat";
-                    factMonthText.Style.FontSize = "14px";
+                    factMonthText.Style.FontSize = "16px";
                     factMonthText.Style.FontWeight = "500";
                     factMonthText.TextContent = $"Факт:";
 
@@ -229,9 +229,9 @@ namespace BusinessLogicLayer.Services
                     factMonth.SetAttribute("height", "44px");
                     factMonth.SetAttribute("width", "102px");
                     factMonth.SetAttribute("x", "215px");
-                    factMonth.SetAttribute("y", "611px");
+                    factMonth.SetAttribute("y", "541px");
                     factMonth.Style.FontFamily = "Montserrat";
-                    factMonth.Style.FontSize = "14px";
+                    factMonth.Style.FontSize = "16px";
                     factMonth.Style.FontWeight = "500";
 
                     Decimal decFactMonth = 0;
@@ -248,10 +248,10 @@ namespace BusinessLogicLayer.Services
 
                     planMonthText.SetAttribute("height", "44px");
                     planMonthText.SetAttribute("width", "102px");
-                    planMonthText.SetAttribute("x", "170px");
-                    planMonthText.SetAttribute("y", "630px");
+                    planMonthText.SetAttribute("x", "160px");
+                    planMonthText.SetAttribute("y", "560px");
                     planMonthText.Style.FontFamily = "Montserrat";
-                    planMonthText.Style.FontSize = "14px";
+                    planMonthText.Style.FontSize = "16px";
                     planMonthText.Style.FontWeight = "500";
                     planMonthText.TextContent = $"План:";
 
@@ -260,9 +260,9 @@ namespace BusinessLogicLayer.Services
                     planMonth.SetAttribute("height", "44px");
                     planMonth.SetAttribute("width", "102px");
                     planMonth.SetAttribute("x", "215px");
-                    planMonth.SetAttribute("y", "631px");
+                    planMonth.SetAttribute("y", "561px");
                     planMonth.Style.FontFamily = "Montserrat";
-                    planMonth.Style.FontSize = "14px";
+                    planMonth.Style.FontSize = "16px";
                     planMonth.Style.FontWeight = "500";
 
                     Decimal decPlanMonth = 0;
@@ -282,7 +282,7 @@ namespace BusinessLogicLayer.Services
                     decimal dashMonth = 597 - Math.Round(decPercentForMonth * 597 / 100);
                     decimal dashMonthWhite = 0;
 
-                    circleMonthStatus.Cx.BaseVal.Value = 215.5F;
+                    circleMonthStatus.Cx.BaseVal.Value = 285.5F;
                     circleMonthStatus.Cy.BaseVal.Value = 581.5F;
                     circleMonthStatus.R.BaseVal.Value = 95F;
                     circleMonthStatus.SetAttribute("fill", "none");
@@ -310,7 +310,7 @@ namespace BusinessLogicLayer.Services
 
                     SVGCircleElement circleMonth = (SVGCircleElement)document.CreateElementNS(SvgNamespace, "circle");
 
-                    circleMonth.Cx.BaseVal.Value = 215.5F;
+                    circleMonth.Cx.BaseVal.Value = 285.5F;
                     circleMonth.Cy.BaseVal.Value = 581.5F;
                     circleMonth.R.BaseVal.Value = 95F;
                     circleMonth.SetAttribute("fill", "none");
@@ -328,7 +328,7 @@ namespace BusinessLogicLayer.Services
                     percentForForecast.SetAttribute("height", "44px");
                     percentForForecast.SetAttribute("width", "102px");
                     percentForForecast.SetAttribute("x", "50%");
-                    percentForForecast.SetAttribute("y", "884px");
+                    percentForForecast.SetAttribute("y", "814px");
                     percentForForecast.SetAttribute("text-anchor", "middle");
                     percentForForecast.Style.FontFamily = "Montserrat";
                     percentForForecast.Style.FontSize = "36px";
@@ -350,7 +350,7 @@ namespace BusinessLogicLayer.Services
                     decimal dashForecast = 597 - Math.Round(decPercentForForecast * 597 / 100);
                     decimal dashForecastWhite = 0;
 
-                    circleForecastStatus.Cx.BaseVal.Value = 220.5F;
+                    circleForecastStatus.Cx.BaseVal.Value = 290.5F;
                     circleForecastStatus.Cy.BaseVal.Value = 861.5F;
                     circleForecastStatus.R.BaseVal.Value = 95F;
                     circleForecastStatus.SetAttribute("fill", "none");
@@ -378,7 +378,7 @@ namespace BusinessLogicLayer.Services
 
                     SVGCircleElement circleForecast = (SVGCircleElement)document.CreateElementNS(SvgNamespace, "circle");
 
-                    circleForecast.Cx.BaseVal.Value = 220.5F;
+                    circleForecast.Cx.BaseVal.Value = 290.5F;
                     circleForecast.Cy.BaseVal.Value = 861.5F;
                     circleForecast.R.BaseVal.Value = 95F;
                     circleForecast.SetAttribute("fill", "none");
@@ -400,14 +400,14 @@ namespace BusinessLogicLayer.Services
                     else if (decPercentForForecast > 110 && decPercentForForecast <= 112) percentPrize = 1.1m;
                     else if (decPercentForForecast > 112) percentPrize = 1.3m;
 
-                    var factPrize = Math.Truncate(decFactMonth / 100 * percentPrize);
+                    var factPrize = Math.Truncate(decPlanMonth / 100 * percentPrize);
                     
                     SVGTextElement prize = (SVGTextElement)document.CreateElementNS(SvgNamespace, "text");
 
                     prize.SetAttribute("height", "44px");
                     prize.SetAttribute("width", "102px");
                     prize.SetAttribute("x", "51%");
-                    prize.SetAttribute("y", "1035px");
+                    prize.SetAttribute("y", "1005px");
                     prize.SetAttribute("text-anchor", "middle");
                     prize.Style.FontFamily = "'Montserrat'";
                     prize.Style.FontSize = "36px";
@@ -419,7 +419,7 @@ namespace BusinessLogicLayer.Services
 
                     SVGElement goblet = (SVGElement)document.CreateElementNS(SvgNamespace, "svg");
                     goblet.SetAttribute("x", "143px");
-                    goblet.SetAttribute("y", "1057px");
+                    goblet.SetAttribute("y", "967px");
                     goblet.InnerHTML = gobletFile.ToString();
 
                     //Backgound
@@ -439,7 +439,7 @@ namespace BusinessLogicLayer.Services
 
                     // Saving
 
-                    string begin = "<svg xmlns=\"http://www.w3.org/2000/svg\" height=\"1270px\" width=\"450px\">";
+                    string begin = "<svg xmlns=\"http://www.w3.org/2000/svg\" height=\"1190px\" width=\"450px\">";
                     string font = "<defs><link xmlns =\"http://www.w3.org/1999/xhtml\" href=\"https://fonts.googleapis.com/css?family=Montserrat:400,500,80\" type=\"text/css\" rel=\"stylesheet\" /></defs>";
                     string end = "</svg>";
 
