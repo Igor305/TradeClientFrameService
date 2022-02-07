@@ -6,6 +6,7 @@ using DataAccessLayer.Entities;
 using DataAccessLayer.Repositories.Interfaces;
 using System;
 using System.IO;
+using System.Net.Http;
 using System.Threading.Tasks;
 using System.Xml.Linq;
 
@@ -13,6 +14,7 @@ namespace BusinessLogicLayer.Services
 {
     public class TradeClientFrameServiceGoodsService : ITradeClientFrameServiceGoodsService
     {
+        static readonly HttpClient client = new HttpClient();
         private readonly string SvgNamespace = "http://www.w3.org/2000/svg";
         private readonly string documentPath = Path.Combine("", "PlanShops.svg");
 
@@ -30,12 +32,31 @@ namespace BusinessLogicLayer.Services
         public async Task getImageColored(int stockId)
         {
             stockId = FirstShop(stockId);
+            string temperature = await getTemperature(stockId);
 
             ItExecutionPlanShop itExecutionPlanShop = await _iitExecutionPlanShopRepository.getInfoForStockId(stockId);
 
             ItExecutionPlanShopModel itExecutionPlanShopModel = _mapper.Map<ItExecutionPlanShop, ItExecutionPlanShopModel>(itExecutionPlanShop);
 
-            getImage(itExecutionPlanShopModel);
+            await getImage(itExecutionPlanShopModel, temperature);
+        }
+
+        private async Task<string> getTemperature(int stockId)
+        {
+            HttpResponseMessage response = await client.GetAsync($"http://ws05.avrora.lan/sensors/avg/period/temp?key=28c9a7e466e042zc8e2q7de1392bb1w2&stock={stockId}");
+            response.EnsureSuccessStatusCode();
+            string result = "";
+            try
+            {
+                TemperatureModel temperatureModel = await response.Content.ReadAsAsync<TemperatureModel>();
+
+                result = Math.Round(temperatureModel.Value).ToString();     
+            }
+            catch
+            {
+
+            }
+            return result;
         }
 
         private int FirstShop(int stockId)
@@ -47,17 +68,16 @@ namespace BusinessLogicLayer.Services
             return stockId;
         }
 
-        public void getImage(ItExecutionPlanShopModel itExecutionPlanShopModel)
+        public async Task getImage(ItExecutionPlanShopModel itExecutionPlanShopModel, string temperature)
         {
             try
             {
-
 
                 using (var document = new SVGDocument())
                 {
                     var svgElement = document.RootElement;
 
-                    svgElement.SetAttribute("height", "1190px");
+                    svgElement.SetAttribute("height", "1380px");
                     svgElement.SetAttribute("width", "450px");
 
                     // Today          
@@ -393,12 +413,12 @@ namespace BusinessLogicLayer.Services
 
                     decimal percentPrize = 0.0m;
 
-                    if (decPercentForForecast <= 80) percentPrize = 0.0m;
-                    else if (decPercentForForecast > 80 && decPercentForForecast <= 100) percentPrize = 0.3m;
-                    else if (decPercentForForecast > 100 && decPercentForForecast <= 105) percentPrize = 0.7m;
-                    else if (decPercentForForecast > 105 && decPercentForForecast <= 110) percentPrize = 0.9m;
-                    else if (decPercentForForecast > 110 && decPercentForForecast <= 112) percentPrize = 1.1m;
-                    else if (decPercentForForecast > 112) percentPrize = 1.3m;
+                    if (decPercentForForecast < 80) percentPrize = 0.0m;
+                    else if (decPercentForForecast >= 80 && decPercentForForecast < 100) percentPrize = 0.3m;
+                    else if (decPercentForForecast >= 100 && decPercentForForecast < 105) percentPrize = 0.7m;
+                    else if (decPercentForForecast >= 105 && decPercentForForecast < 110) percentPrize = 0.9m;
+                    else if (decPercentForForecast >= 110 && decPercentForForecast < 112) percentPrize = 1.1m;
+                    else if (decPercentForForecast >= 112) percentPrize = 1.3m;
 
                     var factPrize = Math.Truncate(decPlanMonth / 100 * percentPrize);
                     
@@ -407,7 +427,7 @@ namespace BusinessLogicLayer.Services
                     prize.SetAttribute("height", "44px");
                     prize.SetAttribute("width", "102px");
                     prize.SetAttribute("x", "51%");
-                    prize.SetAttribute("y", "1005px");
+                    prize.SetAttribute("y", "1015px");
                     prize.SetAttribute("text-anchor", "middle");
                     prize.Style.FontFamily = "'Montserrat'";
                     prize.Style.FontSize = "36px";
@@ -417,10 +437,24 @@ namespace BusinessLogicLayer.Services
 
                     XDocument gobletFile = XDocument.Load(colorForecast.Item2);
 
-                    SVGElement goblet = (SVGElement)document.CreateElementNS(SvgNamespace, "svg");
-                    goblet.SetAttribute("x", "143px");
-                    goblet.SetAttribute("y", "967px");
-                    goblet.InnerHTML = gobletFile.ToString();
+                    //Temperature
+
+                    string pathTemperature = getTemperatureColor(temperature);
+
+                    SVGTextElement temperatureValue = (SVGTextElement)document.CreateElementNS(SvgNamespace, "text");
+
+                    temperatureValue.SetAttribute("height", "44px");
+                    temperatureValue.SetAttribute("width", "102px");
+                    temperatureValue.SetAttribute("x", "56%");
+                    temperatureValue.SetAttribute("y", "1325px");
+                    temperatureValue.SetAttribute("text-anchor", "middle");
+                    temperatureValue.Style.FontFamily = "'Montserrat'";
+                    temperatureValue.Style.FontSize = "36px";
+                    temperatureValue.Style.FontWeight = "700";
+
+                    temperatureValue.TextContent = $"{temperature}°C";
+
+                    XDocument temperatureFile = XDocument.Load(pathTemperature);
 
                     //Backgound
 
@@ -439,15 +473,16 @@ namespace BusinessLogicLayer.Services
 
                     // Saving
 
-                    string begin = "<svg xmlns=\"http://www.w3.org/2000/svg\" height=\"1190px\" width=\"450px\">";
+                    string begin = "<svg xmlns=\"http://www.w3.org/2000/svg\" height=\"1380px\" width=\"450px\">";
                     string font = "<defs><link xmlns =\"http://www.w3.org/1999/xhtml\" href=\"https://fonts.googleapis.com/css?family=Montserrat:400,500,80\" type=\"text/css\" rel=\"stylesheet\" /></defs>";
                     string end = "</svg>";
 
                     string allSvg = $"{begin}\n{font}\n{backgroundFile}\n" +
                         $"{percentForDay.OuterHTML}\n{factDayText.OuterHTML}\n{factDay.OuterHTML}\n{planDayText.OuterHTML}\n{planDay.OuterHTML}\n{circleDayStatus.OuterHTML}\n{circleDay.OuterHTML}\n" +
                         $"{percentForMonth.OuterHTML}\n{factMonthText.OuterHTML}\n{factMonth.OuterHTML}\n{planMonthText.OuterHTML}\n{planMonth.OuterHTML}\n{circleMonthStatus.OuterHTML}\n{circleMonth.OuterHTML}\n" +
-                        $"{percentForForecast.OuterHTML}\n{circleForecastStatus.OuterHTML}\n{circleForecast.OuterHTML}" +
-                        $"{prize.OuterHTML}\n{gobletFile}\n{end}";
+                        $"{percentForForecast.OuterHTML}\n{circleForecastStatus.OuterHTML}\n{circleForecast.OuterHTML}\n" +
+                        $"{prize.OuterHTML}\n{gobletFile}\n" +
+                        $"{temperatureValue.OuterHTML}\n{temperatureFile}\n{end}";                 
 
                     File.WriteAllText(documentPath, allSvg);
                 }
@@ -481,6 +516,26 @@ namespace BusinessLogicLayer.Services
             if (value > 105) { color = "#38C321"; path = "../images/gobletGreen.svg"; }
 
             var result = (color, path);
+            return result;
+        }
+
+        private string getTemperatureColor(string temperature)
+        {
+            string result = "../images/temperatureGreen.svg";
+
+            if(int.Parse(temperature) <= 17)
+            {
+                result = "../images/temperatureBlue.svg";
+            }
+            if (int.Parse(temperature) == 18)
+            {
+                result = "../images/temperatureGreen.svg";
+            }
+            if (int.Parse(temperature) >= 19)
+            {
+                result = "../images/temperatureRed.svg";
+            }
+
             return result;
         }
     }
