@@ -104,6 +104,9 @@ namespace BusinessLogicLayer.Services
 
                     percentForDay.TextContent = $"{Math.Round(decPercentForDay, 1)}%";
 
+                    //Временно 
+                    percentForDay.TextContent = $"0%";
+
                     SVGTextElement factDayText = (SVGTextElement)document.CreateElementNS(SvgNamespace, "text");
 
                     factDayText.SetAttribute("height", "44px");
@@ -165,6 +168,9 @@ namespace BusinessLogicLayer.Services
 
                     string formatPlanDay = _tradeClientFrameService.formatDecimal(decPlanDay);
                     planDay.TextContent = $"{formatPlanDay}";
+
+                    //Временно 
+                    planDay.TextContent = $"0";
 
                     SVGCircleElement circleDayStatus = (SVGCircleElement)document.CreateElementNS(SvgNamespace, "circle");
 
@@ -233,6 +239,9 @@ namespace BusinessLogicLayer.Services
 
                     percentForMonth.TextContent = $"{Math.Round(decPercentForMonth, 1)}%";
 
+                    //Временно 
+                    percentForMonth.TextContent = $"0%";
+
                     SVGTextElement factMonthText = (SVGTextElement)document.CreateElementNS(SvgNamespace, "text");
 
                     factMonthText.SetAttribute("height", "44px");
@@ -294,6 +303,9 @@ namespace BusinessLogicLayer.Services
 
                     string formatPlanMonth = _tradeClientFrameService.formatDecimal(decPlanMonth);
                     planMonth.TextContent = $"{formatPlanMonth}";
+
+                    //Временно 
+                    planMonth.TextContent = $"0";
 
                     SVGCircleElement circleMonthStatus = (SVGCircleElement)document.CreateElementNS(SvgNamespace, "circle");
 
@@ -362,6 +374,9 @@ namespace BusinessLogicLayer.Services
                     }
 
                     percentForForecast.TextContent = $"{Math.Round(decPercentForForecast, 1)}%";
+
+                    //Временно 
+                    percentForForecast.TextContent = $"0%";
 
                     SVGCircleElement circleForecastStatus = (SVGCircleElement)document.CreateElementNS(SvgNamespace, "circle");
 
@@ -434,6 +449,9 @@ namespace BusinessLogicLayer.Services
                     prize.Style.FontWeight = "700";
 
                     prize.TextContent = $"{factPrize} грн";
+
+                    //Временно 
+                    prize.TextContent = $"0 грн";
 
                     XDocument gobletFile = XDocument.Load(colorForecast.Item2);
 

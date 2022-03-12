@@ -167,3 +167,5 @@ C:\Users\i.talavyria\Desktop\project\API\TradeClientFrameService\TradeClientFram
 C:\Users\i.talavyria\Desktop\project\API\TradeClientFrameService\TradeClientFrameService\PresentationLayer\bin\Release\netcoreapp3.1\runtimes\win-x64\native\libSkiaSharp.dll
 C:\Users\i.talavyria\Desktop\project\API\TradeClientFrameService\TradeClientFrameService\PresentationLayer\bin\Release\netcoreapp3.1\runtimes\win-x86\native\libSkiaSharp.dll
 C:\Users\i.talavyria\Desktop\project\API\TradeClientFrameService\TradeClientFrameService\PresentationLayer\obj\Release\netcoreapp3.1\PresentationLayer.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\i.talavyria\Desktop\project\API\TradeClientFrameService\TradeClientFrameService\PresentationLayer\bin\Release\netcoreapp3.1\System.Net.Http.Formatting.dll
+C:\Users\i.talavyria\Desktop\project\API\TradeClientFrameService\TradeClientFrameService\PresentationLayer\bin\Release\netcoreapp3.1\Newtonsoft.Json.Bson.dll

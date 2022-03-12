@@ -9,6 +9,7 @@ C:\Users\i.talavyria\Desktop\project\API\TradeClientFrameService\TradeClientFram
 C:\Users\i.talavyria\Desktop\project\API\TradeClientFrameService\TradeClientFrameService\PresentationLayer\obj\Release\netcoreapp3.1\PubTmp\Out\Aspose.Words.Pdf2Word.dll
 C:\Users\i.talavyria\Desktop\project\API\TradeClientFrameService\TradeClientFrameService\PresentationLayer\obj\Release\netcoreapp3.1\PubTmp\Out\Aspose.Words.dll
 C:\Users\i.talavyria\Desktop\project\API\TradeClientFrameService\TradeClientFrameService\PresentationLayer\obj\Release\netcoreapp3.1\PubTmp\Out\AutoMapper.dll
+C:\Users\i.talavyria\Desktop\project\API\TradeClientFrameService\TradeClientFrameService\PresentationLayer\obj\Release\netcoreapp3.1\PubTmp\Out\System.Net.Http.Formatting.dll
 C:\Users\i.talavyria\Desktop\project\API\TradeClientFrameService\TradeClientFrameService\PresentationLayer\obj\Release\netcoreapp3.1\PubTmp\Out\Microsoft.Data.SqlClient.dll
 C:\Users\i.talavyria\Desktop\project\API\TradeClientFrameService\TradeClientFrameService\PresentationLayer\obj\Release\netcoreapp3.1\PubTmp\Out\Microsoft.EntityFrameworkCore.dll
 C:\Users\i.talavyria\Desktop\project\API\TradeClientFrameService\TradeClientFrameService\PresentationLayer\obj\Release\netcoreapp3.1\PubTmp\Out\Microsoft.EntityFrameworkCore.Abstractions.dll
@@ -32,6 +33,7 @@ C:\Users\i.talavyria\Desktop\project\API\TradeClientFrameService\TradeClientFram
 C:\Users\i.talavyria\Desktop\project\API\TradeClientFrameService\TradeClientFrameService\PresentationLayer\obj\Release\netcoreapp3.1\PubTmp\Out\Microsoft.OpenApi.dll
 C:\Users\i.talavyria\Desktop\project\API\TradeClientFrameService\TradeClientFrameService\PresentationLayer\obj\Release\netcoreapp3.1\PubTmp\Out\Microsoft.Win32.SystemEvents.dll
 C:\Users\i.talavyria\Desktop\project\API\TradeClientFrameService\TradeClientFrameService\PresentationLayer\obj\Release\netcoreapp3.1\PubTmp\Out\Newtonsoft.Json.dll
+C:\Users\i.talavyria\Desktop\project\API\TradeClientFrameService\TradeClientFrameService\PresentationLayer\obj\Release\netcoreapp3.1\PubTmp\Out\Newtonsoft.Json.Bson.dll
 C:\Users\i.talavyria\Desktop\project\API\TradeClientFrameService\TradeClientFrameService\PresentationLayer\obj\Release\netcoreapp3.1\PubTmp\Out\SkiaSharp.dll
 C:\Users\i.talavyria\Desktop\project\API\TradeClientFrameService\TradeClientFrameService\PresentationLayer\obj\Release\netcoreapp3.1\PubTmp\Out\Swashbuckle.AspNetCore.Swagger.dll
 C:\Users\i.talavyria\Desktop\project\API\TradeClientFrameService\TradeClientFrameService\PresentationLayer\obj\Release\netcoreapp3.1\PubTmp\Out\Swashbuckle.AspNetCore.SwaggerGen.dll
