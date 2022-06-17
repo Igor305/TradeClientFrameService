@@ -167,5 +167,33 @@ namespace PresentationLayer.Controllers
             string file_name = "PlanShops.svg";
             return File(file_path, file_type, file_name);
         }
+
+        /// <summary>
+        /// Данні температури для Goods
+        /// </summary>
+        /// <param name="key">Ключ</param>
+        /// <param name="id">Номер магазину</param>
+        /// <remarks>
+        /// Sample request:
+        /// 
+        ///      http://cash-img.avrora.lan/getImages/goods/temp?key=example&amp;id=5
+        /// 
+        /// </remarks>
+        /// <returns></returns>
+        [HttpGet("goods/temp")]
+        public async Task<IActionResult> getShortImageForGoodsColored([Required][FromQuery] string key, [Required][FromQuery] int id)
+        {
+            if (key != _configuration["Api:Key"])
+            {
+                return StatusCode(500);
+            }
+
+            await _tradeClientFrameServiceGoodsService.getShortImageColored(id);
+
+            Byte[] file_path = System.IO.File.ReadAllBytes(@"ShortPlanShops.svg");                                                                                                                                                                 //  FileStream fs = new FileStream(path, FileMode.Open);
+            string file_type = "image/svg";
+            string file_name = "ShortPlanShops.svg";
+            return File(file_path, file_type, file_name);
+        }
     }
 }

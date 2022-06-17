@@ -17,6 +17,7 @@ namespace BusinessLogicLayer.Services
         static readonly HttpClient client = new HttpClient();
         private readonly string SvgNamespace = "http://www.w3.org/2000/svg";
         private readonly string documentPath = Path.Combine("", "PlanShops.svg");
+        private readonly string shortDoumentPath = Path.Combine("", "ShortPlanShops.svg");
 
         private readonly IitExecutionPlanShopRepository _iitExecutionPlanShopRepository;
         private readonly ITradeClientFrameService _tradeClientFrameService;
@@ -552,6 +553,93 @@ namespace BusinessLogicLayer.Services
             if (int.Parse(temperature) >= 19)
             {
                 result = "../images/temperatureRed.svg";
+            }
+
+            return result;
+        }
+
+        public async Task getShortImageColored(int stockId)
+        {
+            stockId = FirstShop(stockId);
+            string temperature = await getTemperature(stockId);
+            await getShortImage(temperature);
+        }
+
+        private async Task getShortImage(string temperature)
+        {
+            try
+            {
+                using (var document = new SVGDocument())
+                {
+                    var svgElement = document.RootElement;
+
+                    svgElement.SetAttribute("height", "150px");
+                    svgElement.SetAttribute("width", "450px");
+
+                    string pathTemperature = getShortTemperatureColor(temperature);
+
+                    SVGTextElement temperatureValue = (SVGTextElement)document.CreateElementNS(SvgNamespace, "text");
+
+                    temperatureValue.SetAttribute("height", "44px");
+                    temperatureValue.SetAttribute("width", "102px");
+                    temperatureValue.SetAttribute("x", "57%");
+                    temperatureValue.SetAttribute("y", "100px");
+                    temperatureValue.SetAttribute("text-anchor", "middle");
+                    temperatureValue.Style.FontFamily = "'Montserrat'";
+                    temperatureValue.Style.FontSize = "36px";
+                    temperatureValue.Style.FontWeight = "700";
+
+                    temperatureValue.TextContent = $"{temperature}°C";
+
+                    XDocument temperatureFile = XDocument.Load(pathTemperature);
+
+                    //Backgound
+
+                    XDocument backgroundFile = XDocument.Load("../images/shortEmpty.svg");
+
+                    SVGElement b = (SVGElement)document.CreateElementNS(SvgNamespace, "svg");
+                    b.InnerHTML = backgroundFile.ToString();
+
+                    // import font
+
+                    SVGDefsElement defsElement = (SVGDefsElement)document.CreateElementNS(SvgNamespace, "defs");
+
+                    string import = "<link xmlns=\"http://www.w3.org/1999/xhtml\" href=\"https://fonts.googleapis.com/css?family=Montserrat:400,500,80\" type=\"text/css\" rel=\"stylesheet\" />";
+
+                    defsElement.InnerHTML = $"{import}";
+
+                    // Saving
+
+                    string begin = "<svg xmlns=\"http://www.w3.org/2000/svg\" height=\"150px\" width=\"450px\">";
+                    string font = "<defs><link xmlns =\"http://www.w3.org/1999/xhtml\" href=\"https://fonts.googleapis.com/css?family=Montserrat:400,500,80\" type=\"text/css\" rel=\"stylesheet\" /></defs>";
+                    string end = "</svg>";
+
+                    string allSvg = $"{begin}\n{font}\n{backgroundFile}\n" + $"{temperatureValue.OuterHTML}\n{temperatureFile}\n{end}";
+
+                    File.WriteAllText(shortDoumentPath, allSvg);
+                }                   
+            }
+            catch (Exception ex)
+            {        
+                Console.WriteLine(ex.Message);
+            }
+        }
+
+        private string getShortTemperatureColor(string temperature)
+        {
+            string result = "../images/shortTemperatureGreen.svg";
+
+            if (int.Parse(temperature) <= 17)
+            {
+                result = "../images/shortTemperatureBlue.svg";
+            }
+            if (int.Parse(temperature) == 18)
+            {
+                result = "../images/shortTemperatureGreen.svg";
+            }
+            if (int.Parse(temperature) >= 19)
+            {
+                result = "../images/shortTemperatureRed.svg";
             }
 
             return result;

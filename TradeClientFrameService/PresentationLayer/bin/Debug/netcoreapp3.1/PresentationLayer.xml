@@ -84,5 +84,19 @@
             </remarks>
             <returns></returns>
         </member>
+        <member name="M:PresentationLayer.Controllers.getImagesController.getShortImageForGoodsColored(System.String,System.Int32)">
+            <summary>
+            Данні температури
+            </summary>
+            <param name="key">Ключ</param>
+            <param name="id">Номер магазину</param>
+            <remarks>
+            Sample request:
+            
+                 http://cash-img.avrora.lan/getImages/goods/temp?key=example&amp;id=5
+            
+            </remarks>
+            <returns></returns>
+        </member>
     </members>
 </doc>

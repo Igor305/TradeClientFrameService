@@ -5,5 +5,6 @@ namespace BusinessLogicLayer.Services.Interfaces
     public interface ITradeClientFrameServiceGoodsService
     {
         public Task getImageColored(int stockId);
+        public Task getShortImageColored(int stockId);
     }
 }
