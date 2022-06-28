@@ -2,7 +2,7 @@
 using AutoMapper;
 using BusinessLogicLayer.Models;
 using BusinessLogicLayer.Services.Interfaces;
-using DataAccessLayer.Entities;
+using DataAccessLayer.Entities.Avrora;
 using DataAccessLayer.Repositories.Interfaces;
 using System;
 using System.IO;

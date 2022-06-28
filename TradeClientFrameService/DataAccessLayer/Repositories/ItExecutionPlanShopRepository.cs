@@ -1,5 +1,5 @@
 ﻿using DataAccessLayer.AppContext;
-using DataAccessLayer.Entities;
+using DataAccessLayer.Entities.Avrora;
 using DataAccessLayer.Repositories.Interfaces;
 using Microsoft.EntityFrameworkCore;
 using System.Linq;

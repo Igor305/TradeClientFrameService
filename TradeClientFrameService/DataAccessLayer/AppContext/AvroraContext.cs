@@ -1,4 +1,4 @@
-﻿using DataAccessLayer.Entities;
+﻿using DataAccessLayer.Entities.Avrora;
 using Microsoft.EntityFrameworkCore;
 
 #nullable disable

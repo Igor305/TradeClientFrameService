@@ -1,4 +1,4 @@
-﻿using DataAccessLayer.Entities;
+﻿using DataAccessLayer.Entities.Avrora;
 using System.Threading.Tasks;
 
 namespace DataAccessLayer.Repositories.Interfaces

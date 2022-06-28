@@ -86,7 +86,7 @@
         </member>
         <member name="M:PresentationLayer.Controllers.getImagesController.getShortImageForGoodsColored(System.String,System.Int32)">
             <summary>
-            Данні температури
+            Данні температури для Goods
             </summary>
             <param name="key">Ключ</param>
             <param name="id">Номер магазину</param>

@@ -1,6 +1,7 @@
 ﻿using AutoMapper;
 using BusinessLogicLayer.Models;
-using DataAccessLayer.Entities;
+using DataAccessLayer.Entities.Avrora;
+using DataAccessLayer.Entities.Avrora37;
 
 namespace BusinessLogicLayer.AutoHelper
 {
@@ -9,6 +10,7 @@ namespace BusinessLogicLayer.AutoHelper
         public MapperProfile()
         {
             CreateMap<ItExecutionPlanShop, ItExecutionPlanShopModel>();
+            CreateMap<EmployeeSalary, EmployeeSalaryModel>();
         }
     }
 }

@@ -30,11 +30,12 @@ namespace PresentationLayer
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
-            string connectionStringSQL03 = "Data Source=sql03;Initial Catalog=Avrora;Persist Security Info=True;User ID=j-PlanShops-Reader;Password=AE97rX3j5n";
-
-            services.AddDbContext<AvroraContext>(opts => opts.UseSqlServer(connectionStringSQL03));
+            services.AddDbContext<Avrora37Context>(opts => opts.UseSqlServer(Configuration["ConnectionString:SQL31"]));
+            services.AddDbContext<AvroraContext>(opts => opts.UseSqlServer(Configuration["ConnectionString:SQL03"]));
             services.AddScoped<IitExecutionPlanShopRepository, ItExecutionPlanShopRepository>();
+            services.AddScoped<IEmployeeSalaryRepository, EmployeeSalaryRepository>();
             services.AddScoped<ITradeClientFrameService, TradeClientFrameService>();
+            services.AddScoped<IEmployeeSalaryService, EmployeeSalaryService>();
             services.AddScoped<ITradeClientFrameServiceGoodsService, TradeClientFrameServiceGoodsService>();
 
             services.AddControllers();

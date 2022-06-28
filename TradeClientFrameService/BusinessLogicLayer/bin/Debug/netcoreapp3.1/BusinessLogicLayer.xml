@@ -4,5 +4,75 @@
         <name>BusinessLogicLayer</name>
     </assembly>
     <members>
+        <member name="P:BusinessLogicLayer.Models.EmployeeSalaryModel.CodeEmployee">
+            <summary>
+            Код Службовця
+            </summary>
+        </member>
+        <member name="P:BusinessLogicLayer.Models.EmployeeSalaryModel.NameEmployee">
+            <summary>
+            ПІБ Службовця
+            </summary>
+        </member>
+        <member name="P:BusinessLogicLayer.Models.EmployeeSalaryModel.Position">
+            <summary>
+            Посада
+            </summary>
+        </member>
+        <member name="P:BusinessLogicLayer.Models.EmployeeSalaryModel.HourlyRate">
+            <summary>
+            Ставка за годину, грн
+            </summary>
+        </member>
+        <member name="P:BusinessLogicLayer.Models.EmployeeSalaryModel.WorkedOut">
+            <summary>
+            Відпрацьовано, год
+            </summary>
+        </member>
+        <member name="P:BusinessLogicLayer.Models.EmployeeSalaryModel.TotalRate">
+            <summary>
+            Ставка, грн
+            </summary>
+        </member>
+        <member name="P:BusinessLogicLayer.Models.EmployeeSalaryModel.BonusSales">
+            <summary>
+            Премія від продажу, грн
+            </summary>
+        </member>
+        <member name="P:BusinessLogicLayer.Models.EmployeeSalaryModel.TotalSalary">
+            <summary>
+            Загальна зарплата, грн
+            </summary>
+        </member>
+        <member name="P:BusinessLogicLayer.Models.Response.EmployeeSalaryResponseModel.NumberStore">
+            <summary>
+            Магазин
+            </summary>
+        </member>
+        <member name="P:BusinessLogicLayer.Models.Response.EmployeeSalaryResponseModel.SalesStore">
+            <summary>
+            Продажі по магазину, грн
+            </summary>
+        </member>
+        <member name="P:BusinessLogicLayer.Models.Response.EmployeeSalaryResponseModel.BonusStore">
+            <summary>
+            Премія по магазину, грн
+            </summary>
+        </member>
+        <member name="P:BusinessLogicLayer.Models.Response.EmployeeSalaryResponseModel.HoursWorkedStore">
+            <summary>
+            Відпрацьовані години по магазину, грн
+            </summary>
+        </member>
+        <member name="P:BusinessLogicLayer.Models.Response.EmployeeSalaryResponseModel.RatioPerHour">
+            <summary>
+            Коефіцієнт за годину, грн
+            </summary>
+        </member>
+        <member name="P:BusinessLogicLayer.Models.Response.EmployeeSalaryResponseModel.employeeSalaries">
+            <summary>
+            Заробітна плата співробітників
+            </summary>
+        </member>
     </members>
 </doc>
