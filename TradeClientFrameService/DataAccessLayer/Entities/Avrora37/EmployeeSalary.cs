@@ -1,8 +1,9 @@
-﻿using System.ComponentModel.DataAnnotations;
+﻿using Microsoft.EntityFrameworkCore;
 using System.ComponentModel.DataAnnotations.Schema;
 
 namespace DataAccessLayer.Entities.Avrora37
 {
+    [Keyless]
     public class EmployeeSalary
     {
         [Column("Магазин")]
@@ -15,7 +16,6 @@ namespace DataAccessLayer.Entities.Avrora37
         public decimal HoursWorkedStore { get; set; }
         [Column("Коефіцієнт за годину, грн")]
         public decimal RatioPerHour { get; set; }
-        [Key]
         [Column("Код Службовця")]
         public int CodeEmployee { get; set; }
         [Column("ПІБ Службовця")]
