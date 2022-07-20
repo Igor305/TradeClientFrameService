@@ -10,6 +10,8 @@ namespace DataAccessLayer.Entities.Avrora37
         public int NumberStore { get; set; }
         [Column("Продажі по магазину, грн")]
         public decimal SalesStore { get; set; }
+        [Column("Продажі на дату, грн")]
+        public decimal SalesOnDate { get; set; }
         [Column("Премія по магазину, грн")]
         public decimal BonusStore { get; set; }
         [Column("Відпрацьовані години по магазину, грн")]

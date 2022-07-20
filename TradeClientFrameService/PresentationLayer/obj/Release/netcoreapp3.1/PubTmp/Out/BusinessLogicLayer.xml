@@ -54,6 +54,11 @@
             Продажі по магазину, грн
             </summary>
         </member>
+        <member name="P:BusinessLogicLayer.Models.Response.EmployeeSalaryResponseModel.SalesOnDate">
+            <summary>
+            Продажі на дату, грн
+            </summary>
+        </member>
         <member name="P:BusinessLogicLayer.Models.Response.EmployeeSalaryResponseModel.BonusStore">
             <summary>
             Премія по магазину, грн

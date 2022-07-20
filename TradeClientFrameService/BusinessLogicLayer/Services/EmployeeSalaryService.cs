@@ -36,6 +36,7 @@ namespace BusinessLogicLayer.Services
             {
                 employeeSalaryResponseModel.NumberStore = employeeSalaries[0].NumberStore;
                 employeeSalaryResponseModel.SalesStore = String.Format("{0:0.00}", employeeSalaries[0].SalesStore);
+                employeeSalaryResponseModel.SalesOnDate = String.Format("{0:0.00}", employeeSalaries[0].SalesOnDate);
                 employeeSalaryResponseModel.HoursWorkedStore = String.Format("{0:0.00}", employeeSalaries[0].HoursWorkedStore);
                 employeeSalaryResponseModel.RatioPerHour = String.Format("{0:0.000}", employeeSalaries[0].RatioPerHour);
                 employeeSalaryResponseModel.BonusStore = String.Format("{0:0.00}", employeeSalaries[0].BonusStore);

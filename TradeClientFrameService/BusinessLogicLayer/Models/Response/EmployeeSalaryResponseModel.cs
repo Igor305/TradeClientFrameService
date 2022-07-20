@@ -13,6 +13,10 @@ namespace BusinessLogicLayer.Models.Response
         /// </summary>
         public string SalesStore { get; set; }
         /// <summary>
+        /// Продажі на дату, грн
+        /// </summary>
+        public string SalesOnDate { get; set; }
+        /// <summary>
         /// Премія по магазину, грн
         /// </summary>
         public string BonusStore { get; set; }
